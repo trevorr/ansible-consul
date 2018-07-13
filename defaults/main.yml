@@ -128,3 +128,6 @@ consul_disable_update_check: false
 # Define Consul services to add to /etc/consul.d/*
 consul_services: {}
 consul_services_mode: 0640
+
+#telemetry parameters
+consul_telemetry_dogstatsd_addr: true
