@@ -149,7 +149,7 @@
     "disable_hostname": {{ "true" if consul_telemetry_disable_hostname else "false" }}
 {% endif %}
 {% if consul_telemetry_dogstatsd_addr is defined %}
-    "dogstatsd_addr": "127.0.0.1:8125"
+    "dogstatsd_addr": "{{ consul_telemetry_dogstatsd_address }}"
 {% endif %}
   },
 {% if consul_cors_support is defined %}
