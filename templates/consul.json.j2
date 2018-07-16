@@ -144,7 +144,7 @@
 {% if consul_statsite_prefix is defined %}
   "statsite_prefix": "{{ consul_statsite_prefix }}",
 {% endif %}
-"telemetry": {
+  "telemetry": {
 {% if consul_telemetry_disable_hostname is defined %}
     "disable_hostname": {{ "true" if consul_telemetry_disable_hostname else "false" }}
 {% endif %}
