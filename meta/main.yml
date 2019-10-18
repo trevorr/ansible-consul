@@ -23,6 +23,6 @@ galaxy_info:
   min_ansible_version: 1.2
 dependencies:
   - { role: geerlingguy.repo-epel, when: ansible_os_family == "RedHat" }
-  - { role: franklinkim.nginx, when: consul_install_nginx == true and ansible_os_family == "Debian" }
+  - { role: weareinteractive.nginx, when: consul_install_nginx == true and ansible_os_family == "Debian" }
   - { role: geerlingguy.nginx, when: consul_install_nginx == true and ansible_os_family == "RedHat" }
   - { role: joshualund.golang, when: consul_install_consul_cli == true }
